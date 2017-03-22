@@ -1,0 +1,238 @@
+/*=====Timeline=====*/
+
+body {
+	background-color: white;
+	font-family: Helvetica, Arial, sans-serif;
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.timeline {
+	font-size: 0px;
+	margin: 40px 0;
+	width: 100%;
+	padding: 0;
+}
+
+.timeline2 {
+	display: inline-block;
+	position: relative;
+	width: 20%;
+}
+
+.timeline-line {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 5px;
+	font-size: 14px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100px' width='38px'%3E%3Cpolygon points='1,1 34,1 37,3 34,5 1,5 4,3' fill='rgb%28232,232,232%29' stroke='rgb%28232,232,232%29' stroke-width='1' /%3E%3C/svg%3E");
+	background-position: 18.3px -0.5px;
+}
+
+.timeline-circle {
+	font-size: 14px;
+	display: inline-block;
+	border-radius: 50%;
+	height: 6px;
+	width: 6px;
+	box-shadow: inset 0px 0px 0px 1px white;
+	position: absolute;
+	border: 2px solid #e8e8e8;
+	z-index: 10;
+	background-color: white;
+	top: -2px;
+	right: -1px;
+}
+
+.label-top {
+	font-size: 10px;
+	text-align: center;
+	margin-bottom: 5px;
+	color: #777;
+}
+
+.label-bottom {
+	font-size: 10px;
+	height: 2em;
+	text-align: center;
+	padding-top: 3px;
+	font-weight: 600;
+}
+
+.t-progress .label-bottom {
+	color: #00a500;
+} 
+
+.t-attention .label-bottom,
+.features__title__attention {
+	color: #ff9620;
+} 
+
+.t-wrong .label-bottom,
+.features__title__wrong {
+	color: #ff3e40;
+} 
+
+
+.t-progress .timeline-line {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100px' width='38px'%3E%3Cpolygon points='1,1 34,1 37,3 34,5 1,5 4,3' fill='white' stroke='rgb%280,165,0%29' stroke-width='1' /%3E%3C/svg%3E");
+}
+
+.t-attention .timeline-line{
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100px' width='38px'%3E%3Cpolygon points='1,1 34,1 37,3 34,5 1,5 4,3' fill='white' stroke='rgb%28255,150,32%29' stroke-width='1' /%3E%3C/svg%3E");
+}
+
+.t-passed .timeline-line,
+.t-passed .timeline-circle {
+	background: #00a500;
+	border-color: #00a500;
+}
+
+.t-wrong .timeline-line,
+.t-wrong .timeline-circle {
+	background: #ff3e40;
+	border-color: #ff3e40;
+}
+
+.t-attention .timeline-circle {
+	border-color: #ff9620;
+}
+
+.t-progress .timeline-circle {
+	border-color: #00a500;
+}
+
+
+
+/*=====Pie part=====*/
+
+/*pie text*/
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+
+}
+
+.features {
+	width: 100%;
+	padding: 0;
+	font-size: 0;
+}
+
+.features-inner {
+	padding: 20px;
+	box-sizing: border-box;
+	font-size: 10px;
+	display: inline-block;
+	width: 45%;
+	vertical-align: top;
+	
+}
+
+.features-left {
+	padding-right: 60px;
+}
+
+.features-right {
+	padding-left: 80px;
+}
+
+.features__title {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 0.1em;
+}
+
+.features__text {
+	line-height: 1.5em;
+}
+
+/*Pie diagram*/
+
+
+.pie {
+	width: 90px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -60px;
+	margin-top: -30px;
+}
+
+.pie-part {
+	float: left;
+	height: 40px;
+	width: 40px;
+	background-color: green;
+	margin: 1px;
+}
+
+.pie-part1 {
+	border-top-left-radius: 40px;
+}
+
+.pie-part2 {
+	border-top-right-radius: 40px;
+}
+
+.pie-part3 {
+	border-bottom-left-radius: 40px;
+}
+
+.pie-part4 {
+	border-bottom-right-radius: 40px;
+}
+
+.pie-wrong {
+	transform-origin: 0 100%;
+	transform: scale(1.2);
+	background-color: #ff3e40;
+}
+
+
+.pie-attention {
+	transform-origin: 0 0;
+	transform: scale(1.1);
+	background-color: #ff9620;
+}
+
+
+
+
+/*=====Progressbar=====*/
+
+.progressbar-block {
+	width: 48%;
+}
+
+.progressbar {
+	background: #eee;
+}
+
+.progressbar-active {
+	background: blue;
+	text-align: center;
+	color: white;
+	font-size: 8px;
+	padding: 2px;
+}
+
+.progressbar-progress {
+	background-color: #00a500;
+
+}
+
+.progressbar-attention {
+	background-color: #ff9620;
+
+}
+
+.progressbar-wrong {
+	background-color: #ff3e40
+
+
+}

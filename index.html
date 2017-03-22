@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Esphere</title>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<div class="timeline-block">
+
+		<!-- line-passed - зеленый полный
+			line-in-progress - зеленый со стрелками
+			line-wrong - красный
+			line-attention - оранжевый 
+			timeline-part - дефолт серый
+				 -->
+			<ul class="timeline">
+				<li class="timeline2 t-passed">
+					<div class="label-top">&nbsp;</div>	
+					<div class="timeline-line">
+						<div class="timeline-circle"></div>
+					</div>
+					<div class="label-bottom">&nbsp;</div>	
+				</li>
+				<li class="timeline2 t-progress">
+					<div class="label-top">&nbsp;</div>	
+					<div class="timeline-line">
+						<div class="timeline-circle"></div>
+					</div>
+					<div class="label-bottom">В процессе</div>
+				</li>
+				<li class="timeline2">
+					<div class="label-top">&nbsp;</div>	
+					<div class="timeline-line">
+						<div class="timeline-circle"></div>
+					</div>
+					<div class="label-bottom">&nbsp;</div>
+				</li>
+				<li class="timeline2">
+					<div class="label-top">&nbsp;</div>	
+					<div class="timeline-line">
+						<div class="timeline-circle"></div>
+					</div>
+					<div class="label-bottom">&nbsp;</div>		
+				</li>
+				<li class="timeline2">	
+					<div class="label-top">&nbsp;</div>			
+					<div class="timeline-line">
+						<div class="timeline-circle"></div>
+					</div>
+					<div class="label-bottom">&nbsp;</div>	
+				</li>
+			</ul>
+
+			<ul class="timeline">
+				<li class="timeline2 t-passed">
+					<div class="label-top">&nbsp;</div>	
+					<div class="timeline-line">
+						<div class="timeline-circle"></div>
+					</div>
+					<div class="label-bottom">&nbsp;</div>	
+				</li>
+				<li class="timeline2 t-passed">
+					<div class="label-top">&nbsp;</div>	
+					<div class="timeline-line">
+						<div class="timeline-circle"></div>
+					</div>
+					<div class="label-bottom">&nbsp;</div>	
+				</li>
+				<li class="timeline2 t-attention">
+					<div class="label-top">действия возможны</div>	
+					<div class="timeline-line">
+						<div class="timeline-circle"></div>
+					</div>
+					<div class="label-bottom">Что-то пошло не так</div>	
+				</li>
+				<li class="timeline2">
+					<div class="label-top">&nbsp;</div>	
+					<div class="timeline-line">
+						<div class="timeline-circle"></div>
+					</div>
+					<div class="label-bottom">&nbsp;</div>	
+				</li>
+				<li class="timeline2">
+					<div class="label-top">&nbsp;</div>	
+					<div class="timeline-line">
+						<div class="timeline-circle"></div>
+					</div>
+					<div class="label-bottom">&nbsp;</div>	
+				</li>
+			</ul>
+
+			<ul class="timeline">
+				<li class="timeline2 t-passed">
+					<div class="label-top">&nbsp;</div>	
+					<div class="timeline-line">
+						<div class="timeline-circle"></div>
+					</div>
+					<div class="label-bottom">&nbsp;</div>
+				</li>
+				<li class="timeline2 t-passed">
+					<div class="label-top">&nbsp;</div>	
+					<div class="timeline-line">
+						<div class="timeline-circle"></div>
+					</div>
+					<div class="label-bottom">&nbsp;</div>
+				</li>
+				<li class="timeline2 t-passed">
+					<div class="label-top">&nbsp;</div>	
+					<div class="timeline-line">
+						<div class="timeline-circle"></div>
+					</div>
+					<div class="label-bottom">&nbsp;</div>
+				</li>
+				<li class="timeline2 t-wrong">
+					<div class="label-top">все пропало</div>	
+					<div class="timeline-line">
+						<div class="timeline-circle"></div>
+					</div>
+					<div class="label-bottom">Конец игры</div>
+				</li>
+				<li class="timeline2">
+					<div class="label-top">&nbsp;</div>	
+					<div class="timeline-line">
+						<div class="timeline-circle"></div>
+					</div>
+					<div class="label-bottom">&nbsp;</div>
+				</li>
+			</ul>
+		</div>
+		<section class="features-block">
+			<div class="wrapper">
+				<div class="features features-top">
+					<div class="features-inner features-left">
+						<h2 class="features__title">Организационнно-правовые риски</h2>
+						<p class="features__text">Статус компании, массовые адреса, руководители и учредители, время существования организации</p>
+					</div>
+					<div  class="features-inner features-right">
+						<h2 class="features__title features__title__wrong">Финансы</h2>
+						<p class="features__text">Непокрытые убытки, основные средства, выручка, убыток, уставный капитал, крдиторская и дебиторская задолженности</p>
+					</div>
+				</div>	
+				<div class="features features-bottom">
+					<div  class="features-inner features-left">
+						<h2 class="features__title">Госконтракты</h2>
+						<p class="features__text">Выигранные, отмененные и исполненные госконтракты</p>
+					</div>
+					<div  class="features-inner features-right">
+						<h2 class="features__title features__title__attention">Деловые риски</h2>
+						<p class="features__text">Сообщения о банкротстве, арбитражные дела, ресстр недобросовестных поставщиков</p>
+					</div>
+				</div>
+				
+				<div class="pie clearfix">
+					<div class="pie-part pie-part1 pie-passed"></div>
+					<div class="pie-part pie-part2 pie-wrong"></div>
+					<div class="pie-part pie-part3 pie-passed"></div>
+					<div class="pie-part pie-part4 pie-attention"></div>
+				</div>
+
+			</div>
+
+		</section>
+		<div class="progressbar-block">
+			<div class="progressbar">
+				<div class="progressbar-active progressbar-progress" style="width: 33%">
+					33%
+				</div>
+			</div>
+			<div class="progressbar">
+				<div class="progressbar-active progressbar-attention" style="width: 59%">
+					59%
+				</div>
+			</div>
+			<div class="progressbar">
+				<div class="progressbar-active progressbar-wrong" style="width: 92%">
+					92%
+				</div>
+			</div>
+			
+		</div>
+		
+		
+
+	</body>
+</html>
